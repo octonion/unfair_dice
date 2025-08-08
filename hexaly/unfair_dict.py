@@ -65,6 +65,9 @@ def solve_polynomial_factorization(deg_p, deg_q, time_limit_sec):
         h.solve()
 
         print(f"--- Solver Results (Time Limit: {time_limit_sec}s) ---")
+        
+        # The following needs to be fixed per Hexaly engine options
+        
         #if h.solution.status == hexaly.SolutionStatus.OPTIMAL or h.solution.status == hexaly.SolutionStatus.FEASIBLE:
         if False:
             print(f"Objective value: {h.solution.objective_value}")
